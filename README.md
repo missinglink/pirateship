@@ -1,5 +1,7 @@
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaarrrrrrrrrrrrrrr
 
+![vanity image](./image/vanity.jpg)
+
 #### install
 
 $> npm install
