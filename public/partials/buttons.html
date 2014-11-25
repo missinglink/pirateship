@@ -1,0 +1,6 @@
+<div class="pin" ng-repeat="(pin,type) in pins">
+  <h1>{{pin}} ({{type}})</h1>
+  <span ng-repeat="(action,val) in actions[type.split(':')[0]]">
+    <a class="action" href="/#/" ng-click="trigger(pin,type,action,v)" ng-repeat="v in val">{{action}}({{v}})</a>
+  </span>
+</div>

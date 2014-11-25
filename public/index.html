@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="pirate">
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/angular.min.js"></script>
+    <script src="/angular-route.min.js"></script>
+    <script src="/eventemitter2.js"></script>
+    <script src="/jquery.js"></script>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/app.js"></script>
+    <script src="/controller/ButtonController.js"></script>
+    <script src="/controller/DeviceController.js"></script>
+    <script src="/controller/FancyController.js"></script>
+  </head>
+  <body>
+
+    <div ng-view=""></div>
+
+  </body>
+</html>

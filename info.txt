@@ -1,0 +1,30 @@
+
+name: aaaar
+id: 53ff6e065075535146431187
+access_token: d7eb8f18be29bcfa5e631924e85bbbbd9c4077e1
+
+spark call cthulhu_rising digitalwrite D7,LOW
+
+
+{
+  "cmd": "VarReturn",
+  "name": "endpoint",
+  "result": "10.10.1.231:48879",
+  "coreInfo": {
+    "last_app": "",
+    "last_heard": "2014-11-20T02:17:06.767Z",
+    "connected": true,
+    "deviceID": "53ff6e065075535146431187"
+  }
+}
+
+{
+  "id": "53ff6e065075535146431187",
+  "name": "cthulhu_rising",
+  "connected": true,
+  "variables": {
+    "endpoint": "string"
+  },
+  "functions": [],
+  "cc3000_patch_version": "1.29"
+}

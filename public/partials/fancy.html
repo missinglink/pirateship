@@ -1,0 +1,97 @@
+
+<div class="background">
+
+  <!-- Weapon Motor -->
+  <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">Spinaar</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('A6','Motor','start','255')" class="btn btn-default">Full Speed</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('A6','Motor','start','100')" class="btn btn-default">Meander</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('A6','Motor','stop','')" class="btn btn-default">Stop</button>
+    </div>
+  </div>
+
+  <!-- Weapon Gate -->
+  <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">Fire!!</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D1','Servo','to','100')" class="btn btn-default">Open</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D1','Servo','to','75')" class="btn btn-default">Closed</button>
+    </div>
+  </div>
+
+  <!-- Main Engine -->
+  <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">Thrust</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('A7','Motor','start','255')" class="btn btn-default">Full Speed</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('A7','Motor','start','100')" class="btn btn-default">Meander</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('A7','Motor','stop','')" class="btn btn-default">Stop</button>
+    </div>
+  </div>
+
+  <!-- Rudder -->
+  <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">Ruddaaar</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D0','Servo','to','45')" class="btn btn-default">Left</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D0','Servo','to','90')" class="btn btn-default">Middle</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D0','Servo','to','135')" class="btn btn-default">Right</button>
+    </div>
+  </div>
+
+  <!-- Skull Lights -->
+  <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">Scullz</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D6','Led','on','')" class="btn btn-default">On</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D6','Led','off','')" class="btn btn-default">Off</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D6','Led','stop','')" class="btn btn-default">Friend</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" ng-click="trigger('D6','Led','strobe','100')" class="btn btn-default">Enemy!</button>
+    </div>
+  </div>
+
+  <!-- Orientation -->
+  <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">alpha {{orientation.alpha | round:2}}</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">beta {{orientation.beta | round:2}}</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default disabled">gamma {{orientation.gamma | round:2}}</button>
+    </div>
+  </div>
+
+</div>
